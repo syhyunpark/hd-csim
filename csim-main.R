@@ -181,6 +181,7 @@ csim  <- function(y, Tr, X,
 # fit.csim.cv performs a 5 fold cross validation to choose the sparsity tuning parameter,
 # and returns the model with the optimized tuning parameter.
 # If type="BIC", then the function returns the model with the lowest value of BIC.
+# the core functions adopted from the code from Professor Peter Radchenko (Univ. of Sydney)
 ########################################################
 fit.csim.cv <- function(y, Tr, X,
                         ortho.constr = TRUE,
