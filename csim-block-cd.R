@@ -3,6 +3,7 @@
 # To optimize the current nonzero (active) single index coefficients,
 # block.cd implements the block-coordinate descent of Radchenko (2015), given the current index u = alpha'X;
 # return: w.a, the updated (active) coefficients; u, the updated single index; it, the number of iterations
+# the core functions adopted from the code from Professor Peter Radchenko (Univ. of Sydney)
 ######################################################################
 block.cd <- function(w.a, ind.m, ind.old,
                      u, y, Tr, X.a, d.link.fn.obj,
